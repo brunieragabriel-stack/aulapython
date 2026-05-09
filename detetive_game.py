@@ -1,0 +1,1 @@
+print("Bem vindo ao questionario do detetive")

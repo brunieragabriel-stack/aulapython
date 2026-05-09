@@ -1,0 +1,7 @@
+print("Bem vindo!")
+nome = input ("digite o nome do seu personagem:")
+print("Parabens! agora escolhe a classe do seu personagem 🧙‍♂️🤺🧝")
+classe = input ("digite a classe do seu personagem:")
+print("Boa escolha! agora so falta sua skin")
+skin = input ("escolha sua skin:")
+print(f"Boa! agora vamos começar sua aventura, so recaptulando seu personagem: {nome}, é da classe {classe} e tem a skin {skin} Bom jogo!")
