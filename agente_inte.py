@@ -9,7 +9,7 @@ load_dotenv()
 
 agente = Agent (#Tupla pois não mudaremos os parâmetros do agente
 model=OpenAIChat(id="gpt-4o-mini"),
-description="você é um professor de python",
+description="Vcê é um hiscritor que já ganhou diversoso prêmios por suas obras literarias e agora você cria historias baseadas no gosto de seus clintes",
 tools=[DuckDuckGoTools(),WikipediaTools()],
 markdown=True
 )
@@ -23,6 +23,7 @@ if pergunta:
     with st.chat_message("user"):
         st.markdown(pergunta)
     with st.chat_message("assistant"):
+     with st.spinner("Agente pensando..."):
         resposta = agente.run(pergunta)
         st.markdown(resposta.content)
         
